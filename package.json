@@ -1,0 +1,41 @@
+{
+	"name": "wahapedia-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server/server.js",
+	"scripts": {
+		"dev": "nodemon server.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.20.0",
+		"bluebird": "^3.7.2",
+		"body-parser": "^1.19.0",
+		"compression": "^1.7.4",
+		"cors": "^2.8.5",
+		"helmet": "^4.1.1",
+		"http-errors": "^1.8.0",
+		"lodash": "^4.17.20",
+		"loopback": "^3.27.0",
+		"loopback-boot": "^3.3.1",
+		"loopback-component-explorer": "^6.5.1",
+		"loopback-component-push": "^3.5.0",
+		"loopback-connector-mongodb": "^5.4.0",
+		"loopback-context": "^3.5.1",
+		"loopback-ds-timestamp-mixin": "^3.4.1",
+		"moment": "^2.29.0",
+		"mongodb": "^3.6.2",
+		"nodemon": "^2.0.6",
+		"semver": "^7.3.2",
+		"strong-error-handler": "^3.5.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.9.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"prettier": "^2.1.1"
+	}
+}

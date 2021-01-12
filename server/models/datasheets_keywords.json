@@ -1,0 +1,27 @@
+{
+    "name": "datasheets_keywords",
+    "base": "BaseModel",
+    "plural": "datasheets_keywords",
+    "properties": {
+        "keyword": {
+			"type": "string",
+			"required": true
+        },
+        "model": {
+			"type": "string",
+			"required": true
+        },
+
+        "is_faction_keyword": {
+			"type": "boolean",
+			"required": true
+        }
+    },
+    "relations": {
+		"datasheet": {
+			"type": "hasOne",
+			"model": "datasheets",
+			"foreignKey": "id"
+		}
+	}
+}

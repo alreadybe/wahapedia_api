@@ -1,0 +1,19 @@
+{
+    "name": "factions",
+    "base": "BaseModel",
+    "plural": "factions",
+    "properties": {
+		"id": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "link": {
+			"type": "string",
+			"required": true
+        }
+    }
+}

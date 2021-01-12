@@ -1,0 +1,38 @@
+{
+    "name": "datasheets_damage",
+    "base": "BaseModel",
+    "plural": "datasheets_damage",
+    "properties": {
+        "line": {
+			"type": "string",
+			"required": true
+        },
+        "col1": {
+			"type": "string",
+			"required": true
+        },
+        "col2": {
+			"type": "string",
+			"required": true
+        },
+        "col3": {
+			"type": "string",
+			"required": true
+        },
+        "col4": {
+			"type": "string",
+			"required": true
+        },
+        "col5": {
+			"type": "string",
+			"required": true
+        }
+    },
+    "relations": {
+		"datasheet": {
+			"type": "hasOne",
+			"model": "datasheets",
+			"foreignKey": "id"
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+    "name": "datasheets",
+    "base": "BaseModel",
+    "plural": "datasheets",
+    "properties": {
+		"id": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "link": {
+			"type": "string",
+			"required": true
+        },
+        "role": {
+			"type": "string",
+			"required": true
+        },
+        "unit_composition": {
+			"type": "string",
+			"required": true
+        },
+        "transport": {
+			"type": "string",
+			"required": true
+        },
+        "power_points": {
+			"type": "string",
+			"required": true
+        },
+        "priest": {
+			"type": "string",
+			"required": true
+        },
+        "psyker": {
+			"type": "string",
+			"required": true
+        },
+        "open_play_only": {
+			"type": "boolean",
+			"required": true
+        },
+        "virtual": {
+			"type": "string",
+			"required": true
+        }
+    },
+    "relations": {
+		"faction": {
+			"type": "hasOne",
+			"model": "factions",
+			"foreignKey": "id"
+		},
+		"source": {
+			"type": "hasOne",
+			"model": "sources",
+			"foreignKey": "id"
+		},
+		"models": {
+			"type": "hasMany",
+			"model": "datasheets_models",
+			"foreignKey": "datasheet_id",
+			"primaryKey": "id"
+		}
+	}
+}

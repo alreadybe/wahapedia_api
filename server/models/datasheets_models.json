@@ -1,0 +1,74 @@
+{
+    "name": "datasheets_models",
+    "base": "BaseModel",
+    "plural": "datasheets_models",
+    "properties": {
+        "line": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "M": {
+			"type": "string",
+			"required": true
+        },
+        "WS": {
+			"type": "string",
+			"required": true
+        },
+        "BS": {
+			"type": "string",
+			"required": true
+        },
+        "S": {
+			"type": "string",
+			"required": true
+        },
+        "T": {
+			"type": "string",
+			"required": true
+        },
+        "W": {
+			"type": "string",
+			"required": true
+        },
+        "A": {
+			"type": "string",
+			"required": true
+        },        
+        "Ld": {
+			"type": "string",
+			"required": true
+        },       
+        "Sv": {
+			"type": "string",
+			"required": true
+        },         
+        "cost": {
+			"type": "string",
+			"required": true
+        },        
+        "cost_description": {
+			"type": "string",
+			"required": true
+        },       
+        "models_per_unit": {
+			"type": "string",
+			"required": true
+        },
+        "is_faction_keyword": {
+			"type": "boolean",
+			"required": true
+        }
+    },
+    "relations": {
+		"datasheet": {
+			"type": "hasOne",
+			"model": "datasheets",
+            "foreignKey": "id"
+		}
+	}
+}

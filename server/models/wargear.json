@@ -1,0 +1,42 @@
+{
+    "name": "wargear",
+    "base": "BaseModel",
+    "plural": "wargear",
+    "properties": {
+		"id": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "type": {
+			"type": "string",
+			"required": true
+        },
+        "description": {
+			"type": "string",
+			"required": true
+        },
+        "cost_description": {
+			"type": "string",
+			"required": true
+        },
+        "cost": {
+			"type": "string",
+			"required": true
+        },
+        "is_relic": {
+			"type": "boolean",
+			"required": true
+        }
+    },
+    "relations": {
+		"source": {
+			"type": "hasOne",
+			"model": "sources",
+			"foreignKey": "id"
+		}
+	}
+}

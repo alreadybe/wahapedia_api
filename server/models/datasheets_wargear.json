@@ -1,0 +1,35 @@
+{
+    "name": "datasheets_wargear",
+    "base": "BaseModel",
+    "plural": "datasheets_wargear",
+    "properties": {
+        "line": {
+			"type": "string",
+			"required": true
+        },
+        "is_index_wargear": {
+			"type": "boolean",
+			"required": true
+        },
+        "cost": {
+			"type": "string",
+			"required": true
+        },
+        "model": {
+			"type": "string",
+			"required": true
+        }
+    },
+    "relations": {
+		"datasheet": {
+			"type": "hasOne",
+			"model": "datasheets",
+			"foreignKey": "id"
+		},
+		"wargear": {
+			"type": "hasOne",
+			"model": "wargear",
+			"foreignKey": "id"
+		}
+	}
+}

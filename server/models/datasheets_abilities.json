@@ -1,0 +1,39 @@
+{
+    "name": "datasheets_abilities",
+    "base": "BaseModel",
+    "plural": "datasheets_abilities",
+    "properties": {
+        "line": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "is_index_wargear": {
+			"type": "boolean",
+			"required": true
+        },
+        "cost": {
+			"type": "string",
+			"required": true
+        },
+        "model": {
+			"type": "string",
+			"required": true
+        }
+    },
+    "relations": {
+		"datasheet": {
+			"type": "hasOne",
+			"model": "datasheets",
+			"foreignKey": "id"
+		},
+		"ability": {
+			"type": "hasOne",
+			"model": "abilities",
+			"foreignKey": "id"
+		}
+	}
+}

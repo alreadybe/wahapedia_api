@@ -1,0 +1,12 @@
+{
+	"db": {
+		"name": "db",
+		"connector": "memory"
+	},
+	"mongodb": {
+		"url": "mongodb+srv://dsx:dsx@main.ldfqn.mongodb.net/wahapedia?retryWrites=true&w=majority}",
+		"name": "mongodb",
+		"connector": "mongodb",
+		"allowExtendedOperators": true
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"abilities": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets_abilities": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets_damage": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets_keywords": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets_models": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets_options": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"datasheets_wargear": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"factions": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"sources": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"strategems": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"wargear": {
+		"dataSource": "mongodb",
+		"public": true
+	},
+	"wargear_list": {
+		"dataSource": "mongodb",
+		"public": true
+	}
+}

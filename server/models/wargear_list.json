@@ -1,0 +1,50 @@
+{
+    "name": "wargear_list",
+    "base": "BaseModel",
+    "plural": "wargear_list",
+    "properties": {
+		"wargear_id": {
+			"type": "string",
+			"required": true
+        },
+        "line": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "range": {
+			"type": "string",
+			"required": true
+        },
+        "type": {
+			"type": "string",
+			"required": true
+        },
+        "S": {
+			"type": "string",
+			"required": true
+        },
+        "AP": {
+			"type": "string",
+			"required": true
+        },
+        "D": {
+			"type": "string",
+			"required": true
+        },
+        "abilities": {
+			"type": "string",
+			"required": true
+        }
+    },
+    "relations": {
+		"wargear": {
+			"type": "hasOne",
+			"model": "wargear",
+			"foreignKey": "id"
+		}
+	}
+}

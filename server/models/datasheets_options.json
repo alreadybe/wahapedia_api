@@ -1,0 +1,30 @@
+{
+    "name": "datasheets_options",
+    "base": "BaseModel",
+    "plural": "datasheets_options",
+    "properties": {
+        "line": {
+			"type": "string",
+			"required": true
+        },
+        "button": {
+			"type": "string",
+			"required": true
+        },
+        "description": {
+			"type": "string",
+			"required": true
+        },
+        "is_index_wargear": {
+			"type": "boolean",
+			"required": true
+        }
+    },
+    "relations": {
+		"datasheet": {
+			"type": "hasOne",
+			"model": "datasheets",
+			"foreignKey": "id"
+		}
+	}
+}

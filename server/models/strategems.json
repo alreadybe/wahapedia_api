@@ -1,0 +1,39 @@
+{
+    "name": "strategems",
+    "base": "BaseModel",
+    "plural": "strategems",
+    "properties": {
+        "name": {
+			"type": "string",
+			"required": true
+        },
+        "type": {
+			"type": "string",
+			"required": true
+        },
+        "cp_cost": {
+			"type": "string",
+			"required": true
+        },
+        "description": {
+			"type": "string",
+			"required": true
+        },
+        "legend": {
+			"type": "string",
+			"required": true
+        }
+    },
+    "relations": {
+		"faction": {
+			"type": "hasOne",
+			"model": "factions",
+			"foreignKey": "id"
+		},
+		"source": {
+			"type": "hasOne",
+			"model": "sources",
+			"foreignKey": "id"
+		}
+	}
+}
