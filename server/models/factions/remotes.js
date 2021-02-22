@@ -2,9 +2,9 @@ const _ = require('lodash');
 
 const remotes = {
 	get: {
-		description: 'Get all abilities',
+		description: 'Get all factions',
 		http: { path: '/', verb: 'get' },
-		accepts: [{ arg: 'ctx', type: 'object', http: { source: 'context' } }],
+		accepts: [],
 		returns: { type: 'object', root: true },
 	},
 };

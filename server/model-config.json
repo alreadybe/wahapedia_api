@@ -31,6 +31,10 @@
 		"dataSource": "mongodb",
 		"public": true
 	},
+	"rosters": {
+		"dataSource": "mongodb",
+		"public": true
+	},
 	"factions": {
 		"dataSource": "mongodb",
 		"public": true

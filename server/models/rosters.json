@@ -1,0 +1,16 @@
+{
+    "name": "rosters",
+    "base": "BaseModel",
+    "plural": "rosters",
+	"idInjection": true,
+    "properties": {
+		"id": {
+			"type": "string",
+			"required": true
+        },
+        "name": {
+			"type": "string",
+			"required": true
+        }
+    }
+}
